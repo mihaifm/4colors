@@ -1,3 +1,6 @@
+" Copyright (C) 2021-present Mihai Ciuraru
+" License: MIT
+
 scriptencoding utf-8
 
 let g:airline#themes#4colors#palette = {}

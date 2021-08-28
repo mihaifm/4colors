@@ -1,3 +1,6 @@
+" Copyright (C) 2021-present Mihai Ciuraru
+" License: MIT
+
 set background=dark
 hi clear
 
