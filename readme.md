@@ -24,6 +24,17 @@ If you are using airline, add this to your vimrc:
 
     let g:airline_theme='4colors'
 
+## Customization
+
+To customize the theme, you can change the 4 colors (and optionally the 4 grays) at the top of the script.
+
+You can choose any color that broadly fits into a pallete:
+
+* warm - hot - chill - cold
+* white - gray - dark - black
+
+Use the [global variables](https://github.com/mihaifm/4colors/blob/f0b50e4e58f2d6c8a9ae989a26f5d6b2dcaeabee/colors/4colors.vim#L13) as guidance.
+
 ## License
 
 MIT
