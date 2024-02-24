@@ -1,8 +1,8 @@
 # 4colors
 
-![image](https://user-images.githubusercontent.com/981184/131224929-09ca0ecc-3103-4b14-a1c5-fdaff1afe55f.png)
+![image1](https://github.com/mihaifm/4colors/assets/981184/6349cbe0-6a06-4e2c-8aa8-8d92fdb8e195)
 
-![image](https://user-images.githubusercontent.com/981184/131224946-04a4da9e-b198-4bd6-846d-67e7ba04b8a7.png)
+![image2](https://github.com/mihaifm/4colors/assets/981184/81daed10-c700-4175-9a98-24ed49c396d5)
 
 4colors is a distraction-free, dark colorscheme for vim that only uses 4 colors. It's still work in progress, so feedback is appreciated.
 
@@ -12,7 +12,7 @@ The goals here are:
 - easy customization - simply change the 4 colors
 - terminal compatibility
 
-The plugin also comes with a vim-airline theme, which is very lightweight.
+The plugin also comes with vim-airline and lightline themes.
 
 ## Installation
 
@@ -23,6 +23,10 @@ Install with your favorite plugin manager, or manually via:
 If you are using airline, add this to your vimrc:
 
     let g:airline_theme='4colors'
+
+For lightline:
+
+    let g:lightline = { 'colorscheme': '4colors' }
 
 ## Customization
 

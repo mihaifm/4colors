@@ -82,8 +82,8 @@ exe 'hi NonText' . s:grayFg
 
 exe 'hi Pmenu' . s:darkBg
 exe 'hi VertSplit' . s:blackBg . s:darkFg
-exe 'hi StatusLine' . s:darkBg . s:blackFg
-exe 'hi StatusLineNC' . s:blackBg . s:darkFg
+exe 'hi StatusLine' . ' gui=none ' . s:chillBg . s:blackFg
+exe 'hi StatusLineNC' . ' gui=none ' . s:darkBg . s:grayFg
 
 """"""""""""""
 " User groups
