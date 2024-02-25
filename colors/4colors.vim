@@ -25,7 +25,7 @@ let g:fourcolors#ctermChill= 120 " lightgreen 87ff87
 let g:fourcolors#guiCold   = '#40E0D0' " turquoise
 let g:fourcolors#ctermCold = 80 " mediumturquoise 5fd7d7
 
-"""""""""""""
+"""""""""""""""
 " 4 Non-colors
 
 let g:fourcolors#guiWhite   = '#FAEBD7' " antiquewhite
@@ -59,6 +59,23 @@ let s:chillFg = ' ctermfg=' . g:fourcolors#ctermChill . ' guifg=' . g:fourcolors
 let s:chillBg = ' ctermbg=' . g:fourcolors#ctermChill . ' guibg=' . g:fourcolors#guiChill
 let s:coldFg = ' ctermfg=' . g:fourcolors#ctermCold . ' guifg=' . g:fourcolors#guiCold
 let s:coldBg = ' ctermbg=' . g:fourcolors#ctermCold . ' guibg=' . g:fourcolors#guiCold
+
+let g:fourcolors#whiteFg = s:whiteFg
+let g:fourcolors#whiteBg = s:whiteBg
+let g:fourcolors#blackFg = s:blackFg
+let g:fourcolors#blackBg = s:blackBg
+let g:fourcolors#grayFg = s:grayFg
+let g:fourcolors#grayBg = s:grayBg
+let g:fourcolors#darkFg = s:darkFg
+let g:fourcolors#darkBg = s:darkBg
+let g:fourcolors#warmFg = s:warmFg
+let g:fourcolors#warmBg = s:warmBg
+let g:fourcolors#hotFg = s:hotFg
+let g:fourcolors#hotBg = s:hotBg
+let g:fourcolors#chillFg = s:chillFg
+let g:fourcolors#chillBg = s:chillBg
+let g:fourcolors#coldFg = s:coldFg
+let g:fourcolors#coldBg = s:coldBg
 
 """""""""
 " General
