@@ -60,6 +60,8 @@ let s:chillBg = ' ctermbg=' . g:fourcolors#ctermChill . ' guibg=' . g:fourcolors
 let s:coldFg = ' ctermfg=' . g:fourcolors#ctermCold . ' guifg=' . g:fourcolors#guiCold
 let s:coldBg = ' ctermbg=' . g:fourcolors#ctermCold . ' guibg=' . g:fourcolors#guiCold
 
+let s:none = ' cterm=none gui=none '
+
 let g:fourcolors#whiteFg = s:whiteFg
 let g:fourcolors#whiteBg = s:whiteBg
 let g:fourcolors#blackFg = s:blackFg
@@ -80,54 +82,54 @@ let g:fourcolors#coldBg = s:coldBg
 """""""""
 " General
 
-exe 'hi Normal' . s:blackBg . s:whiteFg
+exe 'hi Normal' . s:blackBg . s:whiteFg . s:none
 
 hi! link FoldColumn Normal
 
-exe 'hi Visual' . s:darkBg
+exe 'hi Visual' . s:darkBg . s:none
 
 hi! link CursorLine Visual
 
-exe 'hi Cursor' . s:warmBg
-exe 'hi MatchParen' . s:warmBg
-exe 'hi Directory' . s:warmFg
-exe 'hi Folded' . s:blackFg
-exe 'hi NonText' . s:grayFg
+exe 'hi Cursor' . s:warmBg . s:none
+exe 'hi MatchParen' . s:warmBg . s:none
+exe 'hi Directory' . s:warmFg . s:none
+exe 'hi Folded' . s:blackFg . s:none
+exe 'hi NonText' . s:grayFg . s:none
 
 """"""
 " GUI
 
 exe 'hi Pmenu' . s:darkBg
-exe 'hi VertSplit' . s:blackBg . s:darkFg
-exe 'hi StatusLine' . ' gui=none ' . s:chillBg . s:blackFg
-exe 'hi StatusLineNC' . ' gui=none ' . s:darkBg . s:grayFg
+exe 'hi VertSplit' . s:blackBg . s:darkFg . s:none
+exe 'hi StatusLine' . s:chillBg . s:blackFg . s:none
+exe 'hi StatusLineNC' . s:darkBg . s:grayFg . s:none
 
 """"""""""""""
 " User groups
 
-exe 'hi User1' . s:warmFg . s:darkBg
-exe 'hi User2' . s:coldFg . s:darkBg
-exe 'hi User3' . s:chillFg . s:darkBg
-exe 'hi User4' . s:hotFg . s:darkBg
+exe 'hi User1' . s:warmFg . s:darkBg . s:none
+exe 'hi User2' . s:coldFg . s:darkBg . s:none
+exe 'hi User3' . s:chillFg . s:darkBg . s:none
+exe 'hi User4' . s:hotFg . s:darkBg . s:none
 
 """""""""
 " Syntax
 
-exe 'hi Comment' . s:chillFg
+exe 'hi Comment' . s:chillFg . s:none
 
 hi! link Todo Comment
 hi! link SpecialComment Comment
 
-exe 'hi String' . s:hotFg
+exe 'hi String' . s:hotFg . s:none
 
 hi! link Special String
 hi! link Number String
 hi! link Character String
 hi! link Title String
 
-exe 'hi Function' . s:coldFg
+exe 'hi Function' . s:coldFg . s:none
 
-exe 'hi Identifier' . s:coldFg
+exe 'hi Identifier' . s:coldFg . s:none
 
 hi! link Constant Identifier
 hi! link Define Identifier
@@ -155,7 +157,7 @@ hi! link javaScriptBraces Normal
 hi! link rubyStringDelimiter String
 hi! link railsMethod Keyword
 
-exe 'hi xmlTag' . s:coldFg
+exe 'hi xmlTag' . s:coldFg . s:none
 
 hi! link xmlTagName  xmlTag
 hi! link xmlEndTag   xmlTag
