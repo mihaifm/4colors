@@ -61,6 +61,7 @@ let s:coldFg = ' ctermfg=' . g:fourcolors#ctermCold . ' guifg=' . g:fourcolors#g
 let s:coldBg = ' ctermbg=' . g:fourcolors#ctermCold . ' guibg=' . g:fourcolors#guiCold
 
 let s:none = ' cterm=none gui=none '
+let s:reverse = ' cterm=reverse gui=reverse '
 
 let g:fourcolors#whiteFg = s:whiteFg
 let g:fourcolors#whiteBg = s:whiteBg
@@ -95,6 +96,7 @@ exe 'hi MatchParen' . s:warmBg . s:none
 exe 'hi Directory' . s:warmFg . s:none
 exe 'hi Folded' . s:blackFg . s:none
 exe 'hi NonText' . s:grayFg . s:none
+exe 'hi Search' . s:coldFg . s:blackBg . s:reverse
 
 """"""
 " GUI
