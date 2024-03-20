@@ -25,7 +25,7 @@ let s:p.inactive.right = [ [ s:fourBlack, s:fourGray ], [ s:fourBlack, s:fourDar
 
 let s:p.insert.left = [ [ s:fourDark, s:fourCold, 'bold' ], [ s:fourWhite, s:fourDark ] ]
 let s:p.replace.left = [ [ s:fourDark, s:fourHot, 'bold' ], [ s:fourWhite, s:fourDark ] ]
-let s:p.visual.left = [ [ s:fourDark, s:fourWarm, 'bold' ], [ s:fourWhite, s:fourDark ] ]
+let s:p.visual.left = [ [ s:fourWhite, s:fourDark, 'bold' ], [ s:fourWhite, s:fourDark ] ]
 
 let s:p.tabline.left = [ [ s:fourGray, s:fourDark ] ]
 let s:p.tabline.middle = [ [ s:fourGray, s:fourDark ] ]

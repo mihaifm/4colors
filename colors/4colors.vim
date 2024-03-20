@@ -62,6 +62,7 @@ let s:coldBg = ' ctermbg=' . g:fourcolors#ctermCold . ' guibg=' . g:fourcolors#g
 
 let s:none = ' cterm=none gui=none '
 let s:reverse = ' cterm=reverse gui=reverse '
+let s:bg = ' ctermbg=bg ctermfg=bg guibg=bg guifg=bg '
 
 let g:fourcolors#whiteFg = s:whiteFg
 let g:fourcolors#whiteBg = s:whiteBg
@@ -95,7 +96,7 @@ exe 'hi Cursor' . s:warmBg . s:none
 exe 'hi MatchParen' . s:warmBg . s:none
 exe 'hi Directory' . s:warmFg . s:none
 exe 'hi Folded' . s:blackFg . s:none
-exe 'hi NonText' . s:grayFg . s:none
+exe 'hi NonText' . s:darkFg . s:none
 exe 'hi Search' . s:coldFg . s:blackBg . s:reverse
 
 """"""
@@ -105,6 +106,11 @@ exe 'hi Pmenu' . s:darkBg
 exe 'hi VertSplit' . s:blackBg . s:darkFg . s:none
 exe 'hi StatusLine' . s:chillBg . s:blackFg . s:none
 exe 'hi StatusLineNC' . s:darkBg . s:grayFg . s:none
+exe 'hi SignColumn' . s:blackBg . s:grayFg . s:none
+exe 'hi LineNr' . s:blackBg . s:darkFg . s:none
+exe 'hi EndOfBuffer' . s:bg
+exe 'hi ToolbarLine' . s:darkBg . s:whiteFg . s:none
+exe 'hi ToolbarButton' . s:darkBg . s:grayFg . s:none
 
 """"""""""""""
 " User groups
@@ -170,3 +176,7 @@ hi! link htmlEndTag  xmlEndTag
 hi! link htmlArg     xmlArg
 
 hi! link perlSigil xmlTag
+
+exe 'hi! debugBreakpoint' . s:hotBg . s:whiteFg
+exe 'hi! debugBreakpointDisabled' . s:grayBg . s:darkFg
+hi! link debugPC Visual
