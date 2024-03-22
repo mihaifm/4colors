@@ -103,14 +103,16 @@ exe 'hi Search' . s:coldFg . s:blackBg . s:reverse
 " GUI
 
 exe 'hi Pmenu' . s:darkBg
-exe 'hi VertSplit' . s:blackBg . s:darkFg . s:none
-exe 'hi StatusLine' . s:chillBg . s:blackFg . s:none
+exe 'hi VertSplit' . s:darkBg . s:darkFg . s:none
+exe 'hi StatusLine' . s:darkBg . s:grayFg . s:none
+exe 'hi StatusLineTerm' . s:darkBg . s:grayFg . s:none
 exe 'hi StatusLineNC' . s:darkBg . s:grayFg . s:none
+exe 'hi StatusLineTermNC' . s:darkBg . s:grayFg . s:none
 exe 'hi SignColumn' . s:blackBg . s:grayFg . s:none
 exe 'hi LineNr' . s:blackBg . s:darkFg . s:none
 exe 'hi EndOfBuffer' . s:bg
-exe 'hi ToolbarLine' . s:darkBg . s:whiteFg . s:none
-exe 'hi ToolbarButton' . s:darkBg . s:grayFg . s:none
+exe 'hi ToolbarLine' . s:blackBg . s:none
+exe 'hi ToolbarButton' . s:blackBg . s:warmFg . s:none
 
 """"""""""""""
 " User groups
@@ -177,6 +179,7 @@ hi! link htmlArg     xmlArg
 
 hi! link perlSigil xmlTag
 
-exe 'hi! debugBreakpoint' . s:hotBg . s:whiteFg
+exe 'hi! debugBreakpoint' . s:hotFg
 exe 'hi! debugBreakpointDisabled' . s:grayBg . s:darkFg
 hi! link debugPC Visual
+
